@@ -1,0 +1,61 @@
+disabled_rules:
+  - vertical_parameter_alignment_on_call
+  - vertical_parameter_alignment
+  - closure_parameter_position
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - closure_spacing
+  - overridden_super_call
+  - redundant_nil_coalescing
+  - private_outlet
+  - operator_usage_whitespace
+  - closure_end_indentation
+  - first_where
+  - prohibited_super_call
+  - fatal_error_message
+  - unneeded_parentheses_in_closure_argument
+  - pattern_matching_keywords
+  - array_init
+  - literal_expression_end_indentation
+  - joined_default_parameter
+  - contains_over_first_not_nil
+  - override_in_extension
+  - private_action
+  - sorted_first_last
+
+warning_threshold: 1
+
+line_length: 
+  warning: 100
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+  ignores_urls: true
+
+type_body_length:
+  - 250 # warning
+  - 300 # error (должно быть 300)
+
+file_length:
+  warning: 300 # warning
+  error: 400 # error (должно быть 400)
+
+identifier_name:
+  min_length:
+    error: 2
+  max_length:
+    error: 50
+  excluded:
+    - id
+
+nesting:
+  type_level: 3
+
+excluded:
+  - Carthage
+  - Pods
+  - Documents
+  - R.generated.swift
+  
