@@ -13,19 +13,20 @@ This script will copy the templates to `~/Library/Developer/Xcode/Templates/Proj
 
 ## Templates usage
 
-### Single View App With Code Tools
+### HandsApp iOS App Template
 
-This template is a copy of default *Single View App* Xcode template with several handy additions:
+This template is a copy of default *Single View App* Xcode template without Main.storyboard file and with several handy additions:
 
 * `.gitignore` file;
 * [SwiftLint](https://github.com/realm/SwiftLint) build phase integration and configuration file;
 * [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) build phase integration;
 * [R.Swift](https://github.com/mac-cain13/R.swift) build phase integration;
 * `Podfile` to install all the tools mentioned above.
+* manual initialozation of UIWindow with root view controller in AppDelegate
 
 #### Up and running
 
-1. Open Xcode and create new project, choose *Single View App With Code Tools* from the wizard (at the *Private* section);
+1. Open Xcode and create new project, choose *HandsApp iOS App Template* from the wizard (at the *Private* section);
    ![Choosing project template](images/choosing_project_template.png)
 2. Configure project name and other parameters as usual;
 3. Close project, navigate to it via terminal and run `pod install` to install the dependencies;
