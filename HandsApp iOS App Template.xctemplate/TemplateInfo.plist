@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>ru.handsapp.dt.unit.singleViewApplicationWithCodeTools</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template is a copy of default Single View Application template, but it comes with .gitignore, SwiftLint, SwiftFormat, R.swift and script for bootstraping all this stuff with CocoaPods.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>// Override point for customization after application launch.
+self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+self.window.backgroundColor = [UIColor cyanColor];</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>self.window.rootViewController = [[UIViewController alloc] init];
+[self.window makeKeyAndVisible];
+return YES;
+</string>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>// Override point for customization after application launch.
+window = UIWindow()
+window?.backgroundColor = UIColor.cyan</string>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>window?.rootViewController = UIViewController()
+window?.makeKeyAndVisible()
+return true
+</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>../R.generated.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>R.generated.swift</string>
+			<key>SortOrder</key>
+			<integer>99</integer>
+		</dict>
+		<key>../.gitignore</key>
+		<dict>
+			<key>Path</key>
+			<string>.gitignore</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
+		<key>../.swiftlint.yml</key>
+		<dict>
+			<key>Path</key>
+			<string>.swiftlint.yml</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
+		<key>../Podfile</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Beginning</key>
+			<string>use_frameworks!
+inhibit_all_warnings!
+
+platform :ios, &apos;11.0&apos;
+
+target &apos;___PACKAGENAME___&apos; do
+    pod &apos;R.swift&apos;
+    pod &apos;SwiftFormat/CLI&apos;
+    pod &apos;SwiftLint&apos;
+</string>
+			<key>End</key>
+			<string>
+end
+</string>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>../.gitignore</string>
+		<string>../.swiftlint.yml</string>
+		<string>../Podfile</string>
+		<string>../R.generated.swift</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>R.swift</string>
+					<key>ShellScript</key>
+					<string>&quot;$PODS_ROOT/R.swift/rswift&quot; generate &quot;$SRCROOT/R.generated.swift&quot;</string>
+					<key>InputFiles</key>
+					<array>
+						<string>$TEMP_DIR/rswift-lastrun</string>
+					</array>
+					<key>OutputFiles</key>
+					<array>
+						<string>$SRCROOT/R.generated.swift</string>
+					</array>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>SwiftLint</string>
+					<key>ShellScript</key>
+					<string>&quot;${PODS_ROOT}/SwiftLint/swiftlint&quot;</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>SwiftFormat</string>
+					<key>ShellScript</key>
+					<string>&quot;${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat&quot; &quot;${SRCROOT}/___PACKAGENAME___&quot; --swiftversion &quot;${SWIFT_VERSION}&quot;</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
