@@ -115,6 +115,7 @@
 		<string>../R.generated.swift</string>
 		<string>../Gemfile</string>
 		<string>../Rambafile</string>
+		<string>../appcenter-post-clone.sh</string>
 		<string>Application/LaunchScreen.storyboard</string>
 		<string>Third Party/.gitkeep</string>
 		<string>Services/.gitkeep</string>
@@ -213,6 +214,15 @@ end</string>
 			<array/>
 			<key>Path</key>
 			<string>Rambafile</string>
+			<key>Group</key>
+			<string>Non-iOS Resources</string>
+		</dict>
+		<key>../appcenter-post-clone.sh</key>
+		<dict>
+			<key>TergetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>appcenter-post-clone.sh</string>
 			<key>Group</key>
 			<string>Non-iOS Resources</string>
 		</dict>
