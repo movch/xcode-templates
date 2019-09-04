@@ -181,10 +181,16 @@ inhibit_all_warnings!
 
 platform :ios, &apos;11.0&apos;
 
+def appcenter
+    pod &apos;AppCenter&apos;
+    pod &apos;AppCenter/Distribute&apos;
+end
+
 target &apos;___PACKAGENAME___&apos; do
     pod &apos;R.swift&apos;
     pod &apos;SwiftFormat/CLI&apos;
     pod &apos;SwiftLint&apos;
+    appcenter
 </string>
 			<key>End</key>
 			<string>
