@@ -122,7 +122,7 @@
 		<string>Resources/Assets.xcassets</string>
 		<string>Resources/Strings/.gitkeep</string>
 		<string>Resources/Images/.gitkeep</string>
-		<string>Resources/Constants/.gitkeep</string>
+		<string>Resources/Constants/ApiKeys.swift</string>
 		<string>Resources/Fonts/.gitkeep</string>
 		<string>Models/.gitkeep</string>
 		<string>Library/Base Classes/.gitkeep</string>
@@ -181,14 +181,19 @@ inhibit_all_warnings!
 
 platform :ios, &apos;11.0&apos;
 
+def appcenter
+    pod &apos;AppCenter&apos;
+    pod &apos;AppCenter/Distribute&apos;
+end
+
 target &apos;___PACKAGENAME___&apos; do
     pod &apos;R.swift&apos;
     pod &apos;SwiftFormat/CLI&apos;
     pod &apos;SwiftLint&apos;
-</string>
+    appcenter
+end</string>
 			<key>End</key>
 			<string>
-end
 </string>
 			<key>Group</key>
 			<array>
@@ -321,7 +326,7 @@ end
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>Resources/Constants/.gitkeep</key>
+		<key>Resources/Constants/ApiKeys.swift</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -329,9 +334,7 @@ end
 				<string>Constants</string>
 			</array>
 			<key>Path</key>
-			<string>.gitkeep</string>
-			<key>TargetIndices</key>
-			<array/>
+			<string>ApiKeys.swift</string>
 		</dict>
 		<key>Resources/Fonts/.gitkeep</key>
 		<dict>
