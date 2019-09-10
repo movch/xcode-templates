@@ -30,8 +30,8 @@ podfile_path: Podfile
 
 ### Catalogs
 catalogs:
-- 'https://github.com/surfstudio/generamba-templates'
+- 'https://github.com/HandsAppTeam/generamba-templates'
 
 ### Templates
 templates:
-- {name: surf_mvp_module}
+- {name: handsapp_mvp_module}
