@@ -9,6 +9,7 @@
 import AppCenter
 import AppCenterAnalytics
 import AppCenterDistribute
+import AppCenterCrashes
 import UIKit
 
 @UIApplicationMain
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func startAppCenter() {
-        let services: [AnyClass] = [MSAnalytics.self, MSDistribute.self]
+        let services: [AnyClass] = [MSAnalytics.self, MSDistribute.self, MSCrashes.self]
         MSAppCenter.start(ApiKeys.appCenter, withServices: services)
     }
 }
