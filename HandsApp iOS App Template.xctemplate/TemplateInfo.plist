@@ -130,7 +130,7 @@
 		<string>Library/Utils/.gitkeep</string>
 		<string>Library/Extensions/.gitkeep</string>
 		<string>Library/Reusable Layer/.gitkeep</string>
-		<string>Library/Protocols/.gitkeep</string>
+		<string>Library/Protocols/ModuleTransitionable.swift</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -185,6 +185,7 @@ platform :ios, &apos;11.0&apos;
 def appcenter
     pod &apos;AppCenter&apos;
     pod &apos;AppCenter/Distribute&apos;
+    pod &apos;AppCenter/Crashes&apos;
 end
 
 target &apos;___PACKAGENAME___&apos; do
@@ -384,6 +385,16 @@ end</string>
 			<string>../.gitkeep</string>
 			<key>TargetIndices</key>
 			<array/>
+		</dict>
+		<key>Library/Protocols/ModuleTransitionable.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Protocols</string>
+			</array>
+			<key>Path</key>
+			<string>ModuleTransitionable.swift</string>
 		</dict>
 	</dict>
 	<key>Targets</key>
