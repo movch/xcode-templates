@@ -172,6 +172,15 @@
 				<string>Non-iOS Resources</string>
 			</array>
 		</dict>
+		<key>../.swiftformat</key>
+		<dict>
+			<key>Path</key>
+			<string>.swiftformat</string>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
 		<key>../Podfile</key>
 		<dict>
 			<key>TargetIndices</key>
