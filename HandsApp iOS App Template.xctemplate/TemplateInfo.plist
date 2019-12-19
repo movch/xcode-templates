@@ -130,7 +130,7 @@
 		<string>Library/Utils/.gitkeep</string>
 		<string>Library/Extensions/.gitkeep</string>
 		<string>Library/Reusable Layer/.gitkeep</string>
-		<string>Library/Protocols/ModuleTransitionable.swift</string>
+		<string>Library/Protocols/ScreennTransitionable.swift</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -395,7 +395,7 @@ end</string>
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>Library/Protocols/ModuleTransitionable.swift</key>
+		<key>Library/Protocols/ScreenTransitionable.swift</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -403,7 +403,7 @@ end</string>
 				<string>Protocols</string>
 			</array>
 			<key>Path</key>
-			<string>ModuleTransitionable.swift</string>
+			<string>ScreenTransitionable.swift</string>
 		</dict>
 	</dict>
 	<key>Targets</key>
