@@ -21,34 +21,34 @@
 	<key>Options</key>
 	<array>
 		<dict>
-            <key>Identifier</key>
-            <string>hasUnitTests</string>
-            <key>Name</key>
-            <string>Include Unit Tests</string>
-            <key>NotPersisted</key>
-            <false/>
-            <key>SortOrder</key>
-            <integer>100</integer>
-            <key>Type</key>
-            <string>checkbox</string>
-            <key>Default</key>
-            <string>true</string>
-            <key>Units</key>
-            <dict>
-                <key>true</key>
-                <dict>
-                    <key>Components</key>
-                    <array>
-                        <dict>
-                            <key>Identifier</key>
-                            <string>com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
-                            <key>Name</key>
-                            <string>___PACKAGENAME___Tests</string>
-                        </dict>
-                    </array>
-                </dict>
-            </dict>
-        </dict>
+			<key>Identifier</key>
+			<string>hasUnitTests</string>
+			<key>Name</key>
+			<string>Include Unit Tests</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
 		<dict>
 			<key>Identifier</key>
 			<string>languageChoice</string>
@@ -212,33 +212,10 @@
 		</dict>
 		<key>../Podfile</key>
 		<dict>
-			<key>TargetIndices</key>
-			<array/>
-			<key>Beginning</key>
-			<string>use_frameworks!
-inhibit_all_warnings!
-
-platform :ios, &apos;11.0&apos;
-
-def appcenter
-    pod &apos;AppCenter&apos;
-    pod &apos;AppCenter/Distribute&apos;
-    pod &apos;AppCenter/Crashes&apos;
-end
-
-target &apos;___PACKAGENAME___&apos; do
-    pod &apos;R.swift&apos;
-    pod &apos;SwiftFormat/CLI&apos;
-    pod &apos;SwiftLint&apos;
-    appcenter
-end</string>
-			<key>End</key>
-			<string>
-</string>
+			<key>Path</key>
+			<string>Podfile</string>
 			<key>Group</key>
-			<array>
-				<string>Non-iOS Resources</string>
-			</array>
+			<string>Non-iOS Resources</string>
 		</dict>
 		<key>../Gemfile</key>
 		<dict>
@@ -435,19 +412,18 @@ end</string>
 			<string>ScreenTransitionable.swift</string>
 		</dict>
 	</dict>
-
 	<key>Targets</key>
-    <array>
-        <dict>
-            <key>TargetIdentifier</key>
-            <string>com.apple.dt.cocoaTouchApplicationTarget</string>
-            <key>SharedSettings</key>
-            <dict>
-                <key>LD_RUNPATH_SEARCH_PATHS</key>
-                <string>$(inherited) @executable_path/Frameworks</string>
-                <key>TARGETED_DEVICE_FAMILY</key>
-                <string>1,2</string>
-            </dict>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchApplicationTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
 			<key>BuildPhases</key>
 			<array>
 				<dict>
