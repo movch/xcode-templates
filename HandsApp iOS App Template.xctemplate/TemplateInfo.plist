@@ -140,6 +140,7 @@
 		<string>Info.plist</string>
 		<string>../.gitignore</string>
 		<string>../.swiftlint.yml</string>
+		<string>../.swiftformat</string>
 		<string>../Podfile</string>
 		<string>../R.generated.swift</string>
 		<string>../Gemfile</string>
