@@ -1,20 +1,17 @@
-//
-//  ___FILENAME___
-//  ___PACKAGENAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import AppCenter
 import AppCenterAnalytics
 import AppCenterDistribute
 import AppCenterCrashes
 import UIKit
+import HandsAppUI
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, HandsAppDelegate {
     var window: UIWindow?
+
+    var theme: Theme.Type {
+        return DefaultTheme.self
+    }
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         startAppCenter()
