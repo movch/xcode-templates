@@ -18,6 +18,9 @@ Carthage/Build
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
 Pods/
 
+### Fastlane Screenshots ###
+screenshots/
+
 ### macOS ###
 # General
 .DS_Store
