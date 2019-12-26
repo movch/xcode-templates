@@ -38,7 +38,7 @@ This template creates iOS project with [SurfMVP](https://github.com/surfstudio/S
 
 1. Open Xcode and create new project, choose *HandsApp iOS App Template* from the wizard (at the *Private* section);
 2. Configure project name and other parameters as usual;
-3. Close project, navigate to it via terminal and run `bundler install` to install gems. If you have no *Bundler* installed - welcome here https://bundler.io/
+3. Close project, navigate to it via terminal and run `bundle install` to install gems. If you have no *Bundler* installed - welcome here https://bundler.io/
 4. Run `pod install` to install pods;
 5. Open the generated workspace, navigate to *Build Phases* of your project's main target and **move the SwiftFormat, SwiftLint, and R.Swift script phases above the compile phase** (exactly that order). We have to make this step manually due to limitations of Xcode templates;
    ![Build phases configuration](images/build_phases_configuration.png)
