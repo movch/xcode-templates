@@ -18,6 +18,8 @@
 	<integer>1</integer>
 	<key>Nodes</key>
 	<array>
+		<string>../Podfile</string>
+		<string>Resources/Strings/Localizable.strings</string>
 		<string>Resources/Constants/AppDefaults.swift</string>
 		<string>Resources/Constants/KeychainKeys.swift</string>
 		<string>Library/Error Handling/ErrorHandler.swift</string>
@@ -29,9 +31,29 @@
 		<string>Services/Network/Errors/HTTPNetworkError.swift</string>
 		<string>Services/Network/Errors/NetworkReachabilityError.swift</string>
 		<string>Services/Network/ReachabilityManager.swift</string>
+		<string>Models/Network/Responses/.gitkeep</string>
+		<string>Models/Network/Requests/.gitkeep</string>
+		<string>Models/Mapping/.gitkeep</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>../Podfile</key>
+		<dict>
+			<key>Path</key>
+			<string>Podfile</string>
+			<key>Group</key>
+			<string>Non-iOS Resources</string>
+		</dict>
+		<key>Resources/Strings/Localizable.strings</key>
+		<dict>
+			<key>Path</key>
+			<string>Localizable.strings</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Strings</string>
+			</array>
+		</dict>
 		<key>Resources/Constants/AppDefaults.swift</key>
 		<dict>
 			<key>Group</key>
@@ -143,6 +165,44 @@
 			</array>
 			<key>Path</key>
 			<string>ReachabilityManager.swift</string>
+		</dict>
+		<key>Models/Network/Requests/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Models</string>
+				<string>Network</string>
+				<string>Requests</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Models/Network/Responses/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Models</string>
+				<string>Network</string>
+				<string>Responses</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Models/Mapping/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Models</string>
+				<string>Mapping</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
 		</dict>
 	</dict>
 </dict>

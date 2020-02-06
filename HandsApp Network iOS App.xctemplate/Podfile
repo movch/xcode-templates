@@ -9,7 +9,7 @@ def appcenter
     pod 'AppCenter/Crashes'
 end
 
-target 'TestNetworkTemplate' do
+target '___PACKAGENAME___' do
     # Code Tools
     pod 'R.swift'
     pod 'SwiftFormat/CLI'
