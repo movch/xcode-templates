@@ -1,0 +1,23 @@
+use_frameworks!
+inhibit_all_warnings!
+
+platform :ios, '11.0'
+
+def appcenter
+    pod 'AppCenter'
+    pod 'AppCenter/Distribute'
+    pod 'AppCenter/Crashes'
+end
+
+target '___PACKAGENAME___' do
+    # Code Tools
+    pod 'R.swift'
+    pod 'SwiftFormat/CLI'
+    pod 'SwiftLint'
+
+    # SDKs
+    appcenter
+
+    # UI
+    pod 'HandsAppUI'
+end

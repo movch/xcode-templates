@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>ru.handsapp.dt.unit.MVPApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.applicationBase</string>
+		<string>com.apple.dt.unit.iosBase</string>
+		<string>com.apple.dt.unit.languageChoice</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template is for MVP application.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>hasUnitTests</string>
+			<key>Name</key>
+			<string>Include Unit Tests</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>main.m:comments</string>
+						<string>main.m:imports:importCocoa</string>
+						<string>main.m:imports:importHeader:AppDelegate.h</string>
+						<string>main.m:main:UIApplicationMain</string>
+						<string>AppDelegate.h:comments</string>
+						<string>AppDelegate.h:imports:importCocoa</string>
+						<string>AppDelegate.h:interface(AppDelegate : UIResponder &lt;UIApplicationDelegate&gt;)</string>
+						<string>AppDelegate.h:interface:window</string>
+						<string>AppDelegate.m:comments</string>
+						<string>AppDelegate.m:imports:importHeader:AppDelegate.h</string>
+						<string>AppDelegate.m:extension</string>
+						<string>AppDelegate.m:implementation:synthesize</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions(- (BOOL\)application:(UIApplication *\)application didFinishLaunchingWithOptions:(NSDictionary *\)launchOptions)</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillResignActive(- (void\)applicationWillResignActive:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillResignActive:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidEnterBackground(- (void\)applicationDidEnterBackground:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidEnterBackground:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillEnterForeground(- (void\)applicationWillEnterForeground:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillEnterForeground:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidBecomeActive(- (void\)applicationDidBecomeActive:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidBecomeActive:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillTerminate(- (void\)applicationWillTerminate:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillTerminate:comments</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>main.m:main</key>
+						<dict>
+							<key>Beginning</key>
+							<string>int main(int argc, char * argv[]) {</string>
+							<key>End</key>
+							<string>}</string>
+							<key>Indent</key>
+							<integer>1</integer>
+						</dict>
+						<key>main.m:main:UIApplicationMain</key>
+						<string>@autoreleasepool {
+    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+}
+</string>
+						<key>AppDelegate.h:interface:window</key>
+						<string>@property (strong, nonatomic) UIWindow *window;
+</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>// Override point for customization after application launch.</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>return YES;</string>
+						<key>*:implementation:methods:viewDidLoad:super</key>
+						<string>[super viewDidLoad];
+// Do any additional setup after loading the view, typically from a nib.</string>
+						<key>*:implementation:methods:didReceiveMemoryWarning:super</key>
+						<string>[super didReceiveMemoryWarning];
+// Dispose of any resources that can be recreated.</string>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>Application/AppDelegate.swift</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Application/AppDelegate.swift</key>
+						<dict>
+							<key>Group</key>
+							<string>Application</string>
+							<key>Path</key>
+							<string>AppDelegate.swift</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist</string>
+		<string>../.gitignore</string>
+		<string>../.swiftlint.yml</string>
+		<string>../.swiftformat</string>
+		<string>../Podfile</string>
+		<string>../R.generated.swift</string>
+		<string>../Gemfile</string>
+		<string>../Rambafile</string>
+		<string>../appcenter-post-clone.sh</string>
+		<string>Application/LaunchScreen.storyboard</string>
+		<string>Third Party/.gitkeep</string>
+		<string>Services/.gitkeep</string>
+		<string>Screens/.gitkeep</string>
+		<string>Resources/Assets.xcassets</string>
+		<string>Resources/Strings/Localizable.strings</string>
+		<string>Resources/Images/.gitkeep</string>
+		<string>Resources/Constants/ApiKeys.swift</string>
+		<string>Resources/Fonts/.gitkeep</string>
+		<string>Models/Presentation/.gitkeep</string>
+		<string>Library/Base Classes/.gitkeep</string>
+		<string>Library/Utils/.gitkeep</string>
+		<string>Library/Extensions/.gitkeep</string>
+		<string>Library/Reusable Layer/.gitkeep</string>
+		<string>Library/Protocols/ScreenTransitionable.swift</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist</key>
+		<dict>
+			<key>Path</key>
+			<string>Info.plist</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>../R.generated.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>R.generated.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+			</array>
+		</dict>
+		<key>../.gitignore</key>
+		<dict>
+			<key>Path</key>
+			<string>.gitignore</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
+		<key>../.swiftlint.yml</key>
+		<dict>
+			<key>Path</key>
+			<string>.swiftlint.yml</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
+		<key>../.swiftformat</key>
+		<dict>
+			<key>Path</key>
+			<string>.swiftformat</string>
+			<key>Group</key>
+			<array>
+				<string>Non-iOS Resources</string>
+			</array>
+		</dict>
+		<key>../Podfile</key>
+		<dict>
+			<key>Path</key>
+			<string>Podfile</string>
+			<key>Group</key>
+			<string>Non-iOS Resources</string>
+		</dict>
+		<key>../Gemfile</key>
+		<dict>
+			<key>Path</key>
+			<string>Gemfile</string>
+			<key>Group</key>
+			<string>Non-iOS Resources</string>
+		</dict>
+		<key>../Rambafile</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>Rambafile</string>
+			<key>Group</key>
+			<string>Non-iOS Resources</string>
+		</dict>
+		<key>../appcenter-post-clone.sh</key>
+		<dict>
+			<key>TergetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>appcenter-post-clone.sh</string>
+			<key>Group</key>
+			<string>Non-iOS Resources</string>
+		</dict>
+		<key>Application/LaunchScreen.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>Group</key>
+			<string>Application</string>
+		</dict>
+		<key>Resources/Strings/Localizable.strings</key>
+		<dict>
+			<key>Path</key>
+			<string>Localizable.strings</string>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Strings</string>
+			</array>
+		</dict>
+		<key>Library/Base Classes/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Base Classes</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Library/Utils/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Utils</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Library/Extensions/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Extensions</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Library/Reusable Layer/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Reusable Layer</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Library/Protocols/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Protocols</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Models/Presentation/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Models</string>
+				<string>Presentation</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Resources/Assets.xcassets</key>
+		<dict>
+			<key>Path</key>
+			<string>Assets.xcassets</string>
+			<key>Group</key>
+			<string>Resources</string>
+		</dict>
+		<key>Resources/Images/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Images</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Resources/Constants/ApiKeys.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Constants</string>
+			</array>
+			<key>Path</key>
+			<string>ApiKeys.swift</string>
+		</dict>
+		<key>Resources/Fonts/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+				<string>Fonts</string>
+			</array>
+			<key>Path</key>
+			<string>../.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Screens/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<string>Screens</string>
+			<key>Path</key>
+			<string>../.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Services/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<string>Services</string>
+			<key>Path</key>
+			<string>../.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Third Party/.gitkeep</key>
+		<dict>
+			<key>Group</key>
+			<string>Third Party</string>
+			<key>Path</key>
+			<string>../.gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Library/Protocols/ScreenTransitionable.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Library</string>
+				<string>Protocols</string>
+			</array>
+			<key>Path</key>
+			<string>ScreenTransitionable.swift</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchApplicationTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>R.swift</string>
+					<key>ShellScript</key>
+					<string>&quot;$PODS_ROOT/R.swift/rswift&quot; generate &quot;$SRCROOT/R.generated.swift&quot;</string>
+					<key>InputFiles</key>
+					<array>
+						<string>$TEMP_DIR/rswift-lastrun</string>
+					</array>
+					<key>OutputFiles</key>
+					<array>
+						<string>$SRCROOT/R.generated.swift</string>
+					</array>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>SwiftLint</string>
+					<key>ShellScript</key>
+					<string>&quot;${PODS_ROOT}/SwiftLint/swiftlint&quot;</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>SwiftFormat</string>
+					<key>ShellScript</key>
+					<string>&quot;${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat&quot; &quot;${SRCROOT}/___PACKAGENAME___&quot; --swiftversion &quot;${SWIFT_VERSION}&quot;</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

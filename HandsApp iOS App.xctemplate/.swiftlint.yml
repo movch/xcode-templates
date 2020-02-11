@@ -28,7 +28,7 @@ opt_in_rules:
 warning_threshold: 1
 
 line_length: 
-  warning: 100
+  warning: 120
   ignores_function_declarations: true
   ignores_comments: true
   ignores_interpolated_strings: true
@@ -36,11 +36,11 @@ line_length:
 
 type_body_length:
   - 250 # warning
-  - 300 # error (должно быть 300)
+  - 300 # error
 
 file_length:
   warning: 300 # warning
-  error: 400 # error (должно быть 400)
+  error: 400 # error
 
 identifier_name:
   min_length:
@@ -57,5 +57,5 @@ excluded:
   - Carthage
   - Pods
   - Documents
-  - R.generated.swift
-  
+  - "*.generated.swift"
+  - "*/SnapshotHelper.swift"

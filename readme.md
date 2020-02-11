@@ -6,33 +6,42 @@ This repository contains useful Xcode templates to simplify new projects up and 
 
 Clone this project and navigate to it via terminal. Run install script:
 
-    chmod +x install.sh
-    ./install.sh
+    chmod +x install_handsapp_ios_app_template.sh
+    ./install_handsapp_ios_app_template.sh
 
-This script will copy the templates to `~/Library/Developer/Xcode/Templates/Project Templates/Private` where Xcode will be able to find them. 
+This script will copy HandsApp project template to `~/Library/Developer/Xcode/Templates/Project Templates/HandsApp` where Xcode will be able to find it. 
+
+    chmod +x install_empty_swift_file_template.sh
+    ./install_empty_swift_file_template.sh
+
+This script will copy empty file template to `~/Library/Developer/Xcode/Templates/File Templates/Source` where Xcode will be able to find it. 
 
 ## Templates usage
 
-### Single View App With Code Tools
+### Empty Swift File Template
 
-This template is a copy of default *Single View App* Xcode template with several handy additions:
+This template creates blank Swift file without headers and imports. 
+
+### HandsApp iOS App Template
+
+This template creates iOS project with [SurfMVP](https://github.com/surfstudio/Surf-iOS-Developers/blob/master/Surf_MVP.md) structure with some userful features:
 
 * `.gitignore` file;
 * [SwiftLint](https://github.com/realm/SwiftLint) build phase integration and configuration file;
 * [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) build phase integration;
 * [R.Swift](https://github.com/mac-cain13/R.swift) build phase integration;
-* `Podfile` to install all the tools mentioned above.
+* `Podfile` to install all the tools mentioned above;
+* [Generamba](https://github.com/strongself/Generamba) code generator;
+* `Gemfile` to install Generamba and Cocoapods.
 
 #### Up and running
 
-1. Open Xcode and create new project, choose *Single View App With Code Tools* from the wizard (at the *Private* section);
-   ![Choosing project template](images/choosing_project_template.png)
+1. Open Xcode and create new project, choose *HandsApp iOS App Template* from the wizard (at the *Private* section);
 2. Configure project name and other parameters as usual;
-3. Close project, navigate to it via terminal and run `pod install` to install the dependencies;
-4. Open the generated workspace, navigate to *Build Phases* of your project's main target and **move the SwiftFormat, SwiftLint, and R.Swift script phases above the compile phase** (exactly that order). We have to make this step manually due to limitations of Xcode templates;
+3. Close project, navigate to it via terminal and run `bundle install` to install gems. If you have no *Bundler* installed - welcome here https://bundler.io/
+4. Run `pod install` to install pods;
+5. Open the generated workspace, navigate to *Build Phases* of your project's main target and **move the SwiftFormat, SwiftLint, and R.Swift script phases above the compile phase** (exactly that order). We have to make this step manually due to limitations of Xcode templates;
    ![Build phases configuration](images/build_phases_configuration.png)
-5. Build project and have fun!
-
-## References
-
-Developing Xcode templates without documentation is hard, so kudos to [Vokal's templates repository](https://github.com/vokal/Xcode-Template) where I was able to find some answers to my questions.
+6. Remove automaticaly generated tests boilerplate file `{project_name}Tests\{project_name}Tests.swift`
+6. Configure Generamba and setup templates: `generamba template install`
+7. Build project
